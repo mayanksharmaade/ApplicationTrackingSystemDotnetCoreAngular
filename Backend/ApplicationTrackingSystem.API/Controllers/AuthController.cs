@@ -13,6 +13,7 @@ namespace ApplicationTrackingSystem.API.Controllers
         public AuthController(IAuthService auth) => _auth = auth;
 
         [HttpPost("register")]
+        //Test
         public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
             var result = await _auth.RegisterAsync(dto);
